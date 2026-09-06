@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Ink &amp; Tally</title><style>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Ink & Tally</title><meta name=description content="Ink & Tally: an iPhone app for creators who do brand deals. Every deal, what it paid, what it moved."><meta property="og:title" content="Ink & Tally"><meta property="og:description" content="Every brand deal, what it paid, what it moved."><meta property="og:image" content="https://inkandtally.com/img/home.jpg"><style>
 :root{--ground:#FBFAF7;--surface:#fff;--ink:#15181C;--muted:#6B6F76;--accent:#2B4BE0;--hair:#E6E3DC}
 @media(prefers-color-scheme:dark){:root{--ground:#121417;--surface:#1B1F24;--ink:#F1ECE2;--muted:#9AA0A8;--accent:#7D94FF;--hair:#2A2F36}}
 *{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif}
@@ -9,4 +9,37 @@ ul{padding-left:20px}li{margin:0 0 10px}code{font:15px ui-monospace,SFMono-Regul
 a{color:var(--accent)}.card{background:var(--surface);border-radius:20px;padding:24px;box-shadow:0 6px 18px rgba(21,24,28,.08),0 1px 2px rgba(21,24,28,.04);margin:24px 0}
 .stamp{display:inline-block;transform:rotate(-6deg);border:1.6px solid var(--accent);color:var(--accent);border-radius:4px;padding:3px 7px;font:700 12px/1 ui-rounded,-apple-system,sans-serif;letter-spacing:.12em;text-transform:uppercase}
 footer{margin-top:64px;color:var(--muted);font-size:14px;border-top:1px solid var(--hair);padding-top:20px}
-</style></head><body><main><nav><a class=brand href="/">Ink &amp; Tally</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/support/">Support</a></nav><p><span class=stamp>Paid</span></p><h1>Every brand deal, what it paid, what it moved.</h1><p class=meta>Ink &amp; Tally is an iPhone app for creators who do brand deals: deliverables and deadlines, the fee and the commission each video actually earned, invoice chasing, a media kit, and a coach that reads the contract and never names your price.</p><div class=card><p><strong>Not in the App Store yet.</strong> It is being built in the open by one creator for creators. If you want in when it ships, email <a href="mailto:jaron@elliandtee.com">jaron@elliandtee.com</a>.</p></div><footer>© 2026 Elli &amp; Tee Inc. · <a href="mailto:jaron@elliandtee.com">jaron@elliandtee.com</a></footer></main></body></html>
+
+.hero{padding:24px 0 8px}.hero h1{font-size:44px;line-height:1.05;letter-spacing:-.02em;max-width:560px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:540px;margin:16px 0 24px}
+.cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:14px 22px;border-radius:14px}
+.cta.secondary{background:var(--surface);color:var(--accent);margin-left:8px;box-shadow:0 1px 2px rgba(21,24,28,.06)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:40px 0 8px}
+.shot{background:var(--surface);border-radius:20px;padding:12px;box-shadow:0 6px 18px rgba(21,24,28,.08),0 1px 2px rgba(21,24,28,.04)}
+.shot img{display:block;width:100%;border-radius:14px}.shot figcaption{font-size:14px;color:var(--muted);padding:10px 4px 2px}
+.feats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0}
+.feat{background:var(--surface);border-radius:20px;padding:20px;box-shadow:0 6px 18px rgba(21,24,28,.08),0 1px 2px rgba(21,24,28,.04)}
+.feat h3{margin:0 0 6px;font-size:17px}.feat p{margin:0;color:var(--muted);font-size:15px}
+main.wide{max-width:960px}
+@media(max-width:720px){.shots{grid-template-columns:1fr 1fr}.feats{grid-template-columns:1fr}.hero h1{font-size:34px}}
+@media(max-width:480px){.shots{grid-template-columns:1fr}}
+</style></head><body><main class=wide><nav><a class=brand href="/">Ink &amp; Tally</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/support/">Support</a></nav>
+<section class=hero>
+<p><span class=stamp>Paid</span></p>
+<h1>Every brand deal, what it paid, what it moved.</h1>
+<p class=lead>Ink &amp; Tally is an iPhone app for creators who do brand deals. Deliverables and deadlines, the fee and the commission each video actually earned, invoice chasing, a one-page media kit, and a coach that reads the contract and never names your price.</p>
+<a class=cta href="mailto:jaron@elliandtee.com?subject=Ink%20%26%20Tally%20early%20access">Get on the list</a><a class="cta secondary" href="#how">See how it works</a>
+</section>
+<div class=shots>
+<figure class=shot><img src="/img/home.jpg" alt="Deals home: outstanding balance and deals as stamped passbook pages"><figcaption>Your deals as passbook pages, stamped PAID, INVOICED or LATE.</figcaption></figure>
+<figure class=shot><img src="/img/coach.jpg" alt="Coach streaming a pitch draft"><figcaption>The Coach drafts pitches from your own numbers and never names a price.</figcaption></figure>
+<figure class=shot><img src="/img/kit.jpg" alt="Media kit preview with follower count"><figcaption>A media kit you can share as a PDF in one tap.</figcaption></figure>
+</div>
+<section id=how class=feats>
+<div class=feat><h3>A deal is a P&amp;L line</h3><p>Fee, commission per video, what's still owed. Import your TikTok Shop affiliate export and the money joins itself to the right deal.</p></div>
+<div class=feat><h3>Invoices that chase themselves</h3><p>One status per deal: due, invoiced, paid. Reminders nudge you the day before a deadline and a week after an unpaid invoice.</p></div>
+<div class=feat><h3>Tracked deals pick up their own videos</h3><p>Turn tracking on for a retainer and every new video that sells that brand's products attaches on import, marked auto-detected.</p></div>
+<div class=feat><h3>Contract review in plain English</h3><p>Paste the agreement or import the PDF. You get a two-line verdict, the real problems in order of cost, and the sentence to send back for each.</p></div>
+</section>
+<div class=card><p><strong>Not in the App Store yet.</strong> Being built in the open by one creator. Your deals stay on your phone and in your own iCloud; the only thing that touches a server is a Coach request. <a href="/privacy/">Read the privacy policy</a>.</p></div>
+<footer>© 2026 Elli &amp; Tee Inc. · Made by a creator, for creators. · <a href="mailto:jaron@elliandtee.com">jaron@elliandtee.com</a></footer></main></body></html>
