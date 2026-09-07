@@ -1,0 +1,25 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Connecting TikTok · Ink & Tally</title>
+<meta name=robots content="noindex">
+<style>
+:root{--ground:#FBFAF7;--ink:#15181C;--muted:#6B6F76;--accent:#2B4BE0}
+@media(prefers-color-scheme:dark){:root{--ground:#121417;--ink:#F1ECE2;--muted:#9AA0A8;--accent:#7D94FF}}
+body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.5 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}
+main{max-width:420px;padding:32px;text-align:center}h1{font-size:22px;margin:0 0 8px}p{color:var(--muted);margin:0 0 16px}
+a.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:14px}
+</style></head><body><main>
+<h1>Finishing TikTok connect…</h1>
+<p id=msg>Handing back to Ink &amp; Tally.</p>
+<a id=open class=btn href="#" hidden>Open Ink &amp; Tally</a>
+<script>
+// TikTok redirects here with ?code=&state= (or ?error=&error_description=).
+// This page only forwards those to the app's URL scheme; nothing is stored or sent anywhere else.
+(function(){
+  var q = new URLSearchParams(location.search);
+  var params = new URLSearchParams();
+  ['code','state','scopes','error','error_description'].forEach(function(k){ if (q.has(k)) params.set(k, q.get(k)); });
+  var target = 'com.elliandtee.inkandtally://tiktok?' + params.toString();
+  var a = document.getElementById('open'); a.href = target; a.hidden = false;
+  if (q.has('error')) { document.getElementById('msg').textContent = 'TikTok reported: ' + (q.get('error_description') || q.get('error')) + '. You can close this page.'; }
+  location.replace(target);
+})();
+</script></main></body></html>
